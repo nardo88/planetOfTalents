@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow-y: hidden;
+}
+
 html, body {
     scrollbar-color: #704B16 #FDFBF3;     /* «цвет ползунка» «цвет полосы скроллбара» */
     scrollbar-width: thin;
@@ -26,17 +30,17 @@ html, body {
 }
 
 .notion {
-    position: fixed;
+    position: absolute;
     height: 100%;
     width: 690px;
     z-index: -1;
-    bottom: 39%;
-    left: 14%;
+    bottom: 213%;
+    left: -5%;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
 
     img {
         width: 100%;
         object-fit: cover;
-        transform: matrix(-1, 0, 0, 1, 0, 0);
     }
 }
 
