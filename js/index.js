@@ -20,7 +20,6 @@ document.addEventListener('click', e => {
     const target = e.target;
 
     if (target.classList.contains('main__btn')){
-    console.log(target);
         openPopup();
     }
 
