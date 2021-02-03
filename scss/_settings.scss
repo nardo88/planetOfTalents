@@ -21,12 +21,12 @@
 }
 
 .notion {
-    position: absolute;
-    left: -57px;
-    top: -213%;
-    height: 100vh;
+    position: fixed;
+    height: 100%;
     width: 690px;
     z-index: -1;
+    bottom: 39%;
+    left: 14%;
 
     img {
         width: 100%;
