@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Planet of talents</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="#!"><img src="./img/logo.png" alt="logo" class="header__logo-image"></a>
+                </div>
+                <nav class="header__nav">
+                    <a href="#!" class="header__nav-link">направления и таланты</a>
+                    <a href="#!" class="header__nav-link">О НАС</a>
+                </nav>
+                <div class="header__control control">
+                    <div class="control__find">
+                        <input type="text" class="control__input" placeholder="найти талант">
+                        <div class="control__select">
+                            <ul class="control__select-list select-list">
+                                
+                            </ul>
+                        </div>
+                        <button class="control__toggle-find"></button>
+                    </div>
+                    <div class="control__login">
+                        <button class="control__btn">
+                           Вход
+                        </button>
+                    </div>
+                    <div class="control__language">
+                        <span>RU</span>
+                        <img src="./img/icon/arrow-up.png" alt="arrow up">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="main">
+        <div class="container">
+            <div class="notion"><img src="./img/kapriz.png" alt=""></div>
+
+            <div class="main__wrapper">
+                <div class="main__column">
+                    <div class="main__info">
+                        <h1 class="main__title">
+                            <span>интернациональная платформа</span>
+                            planet of talents
+                        </h1>
+                        <p class="main__description">
+                            Здесь Вы можете быть найдены и найти разных талантов искусства, сообщников где более 300 направлений в таких сферах, как кино, театр, телевидение, фотография,  музыка, дизайн, мода и боди-арт, искусство, ремесла, танцы и не только.Воссоединяйтесь и творите вместе.
+                        </p>
+                        <button class="main__btn">войти бесплатно</button>
+                    </div>
+                </div>
+                <div class="main__column main__column--right">
+                    <div class="main__map">
+                        <img src="./img/map.png" alt="map">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="overlay">
+        <div class="popup">
+            <h2 class="popup__title">Вход</h2>
+            <form action="#" class="popup__form">
+                <input name="email" type="email" class="popup__input" placeholder="Электронная почта" required>
+                <input name="email" type="password" class="popup__input" placeholder="Пароль" required>
+                <button class="popup__btn">Войти</button>
+            </form>
+            <a href="#!" class="popup__forget-pass">Забыли пароль?</a>
+            <div class="popup__any-info">
+                <div class="popup__social">
+                    <h4 class="popup__social-title">или пойдите через соцсети</h4>
+                    <div class="popup__social-links">
+                        <a href="#!" class="popup__social-link">
+                            <img src="./img/icon/facebook.svg" alt="">
+                        </a>
+                        <a href="#!" class="popup__social-link">
+                            <img src="./img/icon/google.svg" alt="">
+                        </a>
+                        <a href="#!" class="popup__social-link">
+                            <img src="./img/icon/vk.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="popup__footer">
+                <p class="popup__text">Еще нет аккаунта?</p>
+                <a href="#!" class="popup__link">Зарегистрируйтесь</a>
+            </div>
+            <button class="popup__close"></button>
+        </div>
+    </div>
+
+
+    <div class="container slogan-wrapper">
+        <div class="slogan">Выбери наиболее подходящее для себя направление в искусстве и начни строить свою историю</div>
+    </div>
+
+
+    <div class="background"></div>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

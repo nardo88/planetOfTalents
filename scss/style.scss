@@ -1,0 +1,10 @@
+// подключение шрифтов
+@import 'fonts';
+// основные настройки
+@import 'settings';
+// подключение блока header
+@import 'components/header';
+// подключение блока main
+@import 'components/main';
+// подключение блока popup
+@import 'components/popup';

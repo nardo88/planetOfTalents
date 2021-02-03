@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.background {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    top: 0;
+    height: 100vh;
+    background-image: url(../img/bg.png);
+    background-size: contain;
+    background-position: center;
+}
+
+.notion {
+    position: absolute;
+    left: -57px;
+    top: -213%;
+    height: 100vh;
+    width: 690px;
+    z-index: -1;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+}
+
+.slogan {
+    text-transform: uppercase;
+    background-image: radial-gradient(circle at 0 0, #af8221, #704b16, #8c7c44);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: table;
+    font-style: normal;
+    font-weight: normal;
+    font-family: sans-serif;
+    letter-spacing: 0;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 130%;
+    max-width: 780px;
+    text-align: center;
+
+    padding: 0px 21px 0px 0px;
+    letter-spacing: -2px;
+    margin: -2px 0 0 0;
+
+    &-wrapper {
+        margin-top: 167px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+}

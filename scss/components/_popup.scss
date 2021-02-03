@@ -1,0 +1,229 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.popup {
+    width: 400px;
+    height: 553px;
+    background-image: url(../../img/popup-background.png);
+    background-color: #FFF8DF;
+    background-repeat: repeat;
+    filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.1));
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 0;
+    padding: 0 45px;
+    transition: .5s;
+    opacity: 0;
+
+
+
+
+
+    // .popup__title
+
+    &__title {
+        margin: 65px 0 51px 0;
+        font-family: Merge Pro;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 26px;
+        color: #3C2434;
+    }
+
+    // .popup__form
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    // .popup__input
+
+    &__input {
+        width: 100%;
+
+        border: 1px solid #3C2434;
+        outline: none;
+        box-sizing: border-box;
+        border-radius: 14px;
+        margin-bottom: 20px;
+        padding: 10px 15px 10px;
+        background: transparent;
+        font-family: Merge Pro;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 150%;
+        color: #3C2434;
+
+        &::placeholder {
+            color: #3C2434;
+        }
+
+    }
+
+    // .popup__btn
+
+    &__btn {
+
+        background: radial-gradient(33.75% 540% at 50% 50%, #CA0000 0%, #9E0000 100%);
+        border-radius: 14px;
+        font-family: Merge Pro;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 130%;
+        color: #FFFFFF;
+        outline: none;
+        border: transparent;
+        padding: 9px;
+        width: 100%;
+
+    }
+
+    // .popup__forget-pass
+
+    &__forget-pass {
+        align-self: flex-start;
+        margin-top: 16px;
+        font-family: Merge Pro;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        text-decoration-line: underline;
+        color: #3C2434;
+    }
+
+    // .popup__any-info
+
+    &__any-info {
+        margin-top: 52px;
+
+    }
+
+    // .popup__social
+
+    &__social {}
+
+    // .popup__social-title
+
+    &__social-title {
+        font-family: Merge Pro;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 150%;
+        color: #3C2434;
+    }
+
+    // .popup__social-links
+
+    &__social-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    &__social-link {
+        margin: 0 5px;
+        display: inline-flex;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #3C2434;
+        box-sizing: border-box;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    // .popup__footer
+
+    &__footer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    // .popup__text
+
+    &__text {
+        font-family: Merge Pro;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 150%;
+        color: #3C2434;
+    }
+
+    // .popup__link
+
+    &__link {
+        font-family: Merge Pro;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        text-decoration-line: underline;
+        color: #3C2434;
+    }
+
+    &__close {
+        position: absolute;
+        top: 27px;
+        right: 30px;
+        width: 20px;
+        height: 20px;
+        border: none;
+        outline: none;
+        background: none;
+
+        &:after {
+            content: '';
+            width: 16px;
+            height: 2px;
+            display: block;
+            top: 0;
+            left: 0;
+            transform: rotate(45deg) translate(-1px, -1px);
+            background: #000;
+        }
+
+        &:before {
+            content: '';
+            width: 16px;
+            height: 2px;
+            display: block;
+            top: 0;
+            right: 0;
+            transform: rotate(-45deg);
+            background: #000;
+        }
+
+    }
+}
+
+.open-popup{
+    visibility: visible;
+}
+
+.popup-active{
+    opacity: 1;
+}
